@@ -1,0 +1,352 @@
+
+/* 全体 */
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+
+/* ヘッダー */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: auto;
+    height: 50px;
+    padding: 0 50px;
+
+    background-color: #0F5F5F;
+    border-bottom: 2px solid black;
+}
+
+
+/* ヘッダー左側：ロゴ */
+.header_item1
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 1%;
+}
+
+.header_item1 img
+{
+    display: block;
+    width: auto;
+    height: 35px;
+}
+
+
+/* ヘッダー右側：ログイン情報など */
+.header_item2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 50%;
+    margin-right: 100px;
+}
+
+header p
+{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.header_item2 a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    padding: 0 10px;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ログアウトボタン */
+.logout_button
+{
+    height: 50px;
+    padding: 0 10px;
+
+    color: white;
+    background-color: #0F5F5F;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ヘッダーのホバー */
+.header_item2 a:hover,
+.logout_button:hover
+{
+    color: black;
+    background-color: #19a0a0;
+    transition: 0.3s;
+}
+
+
+/* メインイメージ */
+.main_img
+{
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+/* 検索フォーム */
+.search_area
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search_form
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search_form select,
+.search_form input,
+.search_form button
+{
+    padding: 8px;
+    font-size: 14px;
+}
+
+.search_form input
+{
+    width: 250px;
+}
+
+.search_form button
+{
+    color: white;
+    background-color: #0F5F5F;
+    border: none;
+    cursor: pointer;
+}
+
+.search_form button:hover
+{
+    color: black;
+    background-color: #19a0a0;
+    transition: 0.3s;
+}
+
+
+/* メインコンテナ */
+.container
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+
+/* 左側：ジャンル一覧 */
+.category_list
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 10%;
+    height: fit-content;
+
+    text-align: center;
+    border-right: 1px solid #cccccc;
+}
+
+.category_list a
+{
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.category_list a:hover
+{
+    background-color: white;
+    border-right: 3px solid #0F5F5F;
+}
+
+.category_list a.active
+{
+    color: white;
+    background-color: #0F5F5F;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/* 中央：掲示板一覧 */
+.main
+{
+    width: 50%;
+}
+
+.main h2
+{
+    margin: 0;
+    text-align: center;
+}
+
+
+/* 掲示板作成リンク */
+.create_board a
+{
+    padding: 5px;
+
+    color: white;
+    background-color: #0F5F5F;
+    border-radius: 5px;
+
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.create_board a:hover
+{
+    color: black;
+    background-color: #19a0a0;
+    transition: 0.3s;
+}
+
+
+/* 掲示板 */
+.boards
+{
+    margin-bottom: 20px;
+}
+
+
+/* 掲示板タイトル部分 */
+.boards_title
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 10px;
+
+    background: linear-gradient(to right, #19a0a0 50%, azure 50%);
+    background-size: 200% 100%;
+    background-position: right;
+
+    transition: background-position 0.4s;
+}
+
+.boards_title:has(h3:hover)
+{
+    background-position: left;
+}
+
+
+/* ジャンルタグ */
+.category_tag
+{
+    margin: 0;
+    padding: 1px 5px;
+
+    background-color: #ededed;
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+
+/* 掲示板タイトル */
+.boards_title h3
+{
+    margin: 0;
+    padding: 1px 3px;
+}
+
+.boards_title a
+{
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.boards_title:has(h3:hover) a
+{
+    color: white;
+}
+
+
+/* 掲示板説明部分 */
+.boards_a
+{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin: 30px 0;
+}
+
+
+/* ページ番号・前へ・次へ */
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 35px;
+    height: 35px;
+    padding: 0 8px;
+
+    color: #0F5F5F;
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+
+/* ホバー */
+.pagination a:hover {
+    color: white;
+    background-color: #19a0a0;
+
+    transition: 0.3s;
+}
+
+
+/* 現在のページ */
+.pagination a.active {
+    color: white;
+    background-color: #0F5F5F;
+
+    pointer-events: none;
+}

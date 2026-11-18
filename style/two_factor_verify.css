@@ -1,0 +1,153 @@
+
+/* 全体 */
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: azure;
+}
+
+
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+
+    background-color: #0F5F5F;
+    border-bottom: 2px solid black;
+}
+
+
+/* ヘッダー左側：ロゴ */
+.header_item1 {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    margin-left: 1%;
+}
+
+.header_item1 img {
+    display: block;
+
+    width: auto;
+    height: 35px;
+}
+
+
+/* 認証画面 */
+.verify {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 100px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* 見出し */
+.verify h2 {
+    margin-top: 0;
+    padding: 10px;
+
+    border-bottom: solid #cccccc 1px;
+
+    text-align: center;
+}
+
+
+/* 説明文 */
+.verify > p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+/* エラーメッセージ */
+.verify .message {
+    color: #c0392b;
+}
+
+
+/* フォーム */
+.verify form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* 文字と入力欄のセット */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* ラベル */
+.verify label {
+    font-size: 12px;
+}
+
+
+/* 入力欄 */
+.verify input {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+
+    border: solid #cccccc 1px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #cccccc;
+}
+
+
+/* 認証ボタン */
+.verify button {
+    height: 40px;
+
+    color: white;
+    background-color: #0F5F5F;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.verify button:hover {
+    color: black;
+    background-color: #19a0a0;
+
+    transition: 0.3s;
+}
+
+
+/* 注意書き */
+.verify .notice {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
+}

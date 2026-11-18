@@ -1,0 +1,330 @@
+
+/* 全体 */
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: azure;
+    color: #333333;
+
+    font-family: sans-serif;
+}
+
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: auto;
+    height: 50px;
+    padding: 0 50px;
+
+    background-color: #0F5F5F;
+    border-bottom: 2px solid black;
+}
+
+/* ヘッダー左側：ロゴ */
+.header_item1 {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    margin-left: 1%;
+}
+
+.header_item1 img {
+    display: block;
+
+    width: auto;
+    height: 35px;
+}
+
+/* ヘッダー右側 */
+.header_item2 {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+}
+
+.header_item2 a {
+    padding: 15px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.header_item2 a:hover {
+    color: black;
+    background-color: #19a0a0;
+
+    transition: 0.3s;
+}
+
+/* 設定ページ全体 */
+.settings {
+    width: 650px;
+    max-width: calc(100% - 30px);
+
+    margin: 90px auto 50px;
+}
+
+/* ページ見出し */
+.settings_heading {
+    margin-bottom: 25px;
+}
+
+.settings_subtitle {
+    margin: 0 0 5px;
+
+    color: #0F5F5F;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.settings_heading h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+.settings_description {
+    margin-top: 10px;
+
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* アカウント情報 */
+.account_info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 35px;
+    padding: 22px;
+
+    background-color: white;
+    border: 1px solid #e0e5e5;
+    border-radius: 8px;
+}
+
+/* ユーザーアイコン */
+.account_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 58px;
+    height: 58px;
+
+    color: white;
+    background-color: #0F5F5F;
+    border-radius: 50%;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* アカウント情報の文字 */
+.account_text {
+    min-width: 0;
+}
+
+.account_label {
+    margin: 0 0 5px;
+
+    color: #888888;
+    font-size: 12px;
+}
+
+.account_text h2 {
+    margin: 0;
+
+    font-size: 19px;
+    overflow-wrap: anywhere;
+}
+
+.account_id {
+    margin: 5px 0 0;
+
+    color: #888888;
+    font-size: 12px;
+}
+
+/* 設定セクション */
+.setting_section {
+    margin-bottom: 30px;
+}
+
+/* セクション見出し */
+.section_heading {
+    margin-bottom: 12px;
+}
+
+.section_heading h2 {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+.section_heading p {
+    margin: 5px 0 0;
+
+    color: #888888;
+    font-size: 12px;
+}
+
+/* 設定カード */
+.setting_card,
+.setting_card:link,
+.setting_card:visited {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 10px;
+    padding: 20px;
+
+    color: #333333;
+    background-color: white;
+    border: 1px solid #e0e5e5;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.setting_card:hover {
+    color: #0F5F5F;
+    border-color: #0F5F5F;
+    background-color: #f8ffff;
+}
+
+/* 設定アイコン */
+.setting_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    color: #0F5F5F;
+    background-color: #e5f3f1;
+    border-radius: 8px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.security_icon {
+    color: white;
+    background-color: #0F5F5F;
+}
+
+/* 設定内容 */
+.setting_content {
+    flex: 1;
+    min-width: 0;
+}
+
+.setting_content h3 {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+}
+
+.setting_content p {
+    margin: 0;
+
+    color: #888888;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* 右矢印 */
+.setting_arrow {
+    flex-shrink: 0;
+
+    color: #999999;
+    font-size: 28px;
+}
+
+.setting_card:hover .setting_arrow {
+    color: #0F5F5F;
+}
+
+/* 2段階認証の状態 */
+.security_status {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.status_enabled,
+.status_disabled {
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.status_enabled {
+    color: #176b3a;
+    background-color: #e4f5e9;
+}
+
+.status_disabled {
+    color: #777777;
+    background-color: #eeeeee;
+}
+
+/* フッター */
+.settings_footer {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+/* マイページに戻る */
+.back_button,
+.back_button:link,
+.back_button:visited {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    color: #555555;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.back_button:hover {
+    color: white;
+    background-color: #0F5F5F;
+    border-color: #0F5F5F;
+}

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "pragmarx/google2fa": "^9.1",
+        "chillerlan/php-qrcode": "5.0.2"
+    }
+}
