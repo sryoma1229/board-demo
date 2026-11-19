@@ -10,4 +10,4 @@ PHPとMySQLを使用した掲示板Webアプリケーションです。
 ## Credits
 - data/moderation/Offensive.txt by K Hashimoto (MIT License)
   https://github.com/MosasoM/inappropriate-words-ja
-- img/ の画像: AI(ツール名)で生成
+- img/ の画像: AI(Claude)で生成
